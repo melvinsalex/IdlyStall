@@ -37,22 +37,13 @@
             }
         ]
 
-
-        // foodNeed=String(prompt('Which Idly do you Want?'))
-
         function foodDetails(foodEnteredByUser) {
             return foodEnteredByUser
         }
 
-        // CountOfIdly=string(prompt('How Many Do Idly You Want?'))
-
-
         function noOfIdly(CountOfIdly) {
             return CountOfIdly
         }
-
-
-        // chutneyNeed=String(prompt('Which Chutney do you Want?'))
 
         function chutneyDetails(chutneyEnteredByUser) {
             return chutneyEnteredByUser
@@ -64,7 +55,6 @@
                     priceOfYourFood = (CountOfIdly * (foodType[toFindPrice].price))
                 }
             }
-            //console.log(priceOfYourFood);
             return priceOfYourFood
         }
 
@@ -77,20 +67,13 @@
                 COUNT: foodcount,
                 PRICE: prices
             }
-            /*for(i in orderDetail){
-                bill.push(orderDetail)
-            }*/
-            //arr.push(orderDetail.i)
             bill.push('FOOD :' + food.toUpperCase())
             bill.push('CHUTNEY :' + chutney.toUpperCase())
             bill.push('COUNT :' + foodcount)
             bill.push("PRICE :" + priceOfFood(foodcount, food))
             return bill
         }
-        /*
-        foodDetails(foodNeed)
-        foodDetails(chutneyNeed)*/
-
+    
         //-----------------------------------------------------------------
 
         function promise1() {
@@ -167,7 +150,7 @@
                     function selectingAChutney(foodType) {
                         for (eachChutneyType = 0; eachChutneyType < foodType.length; eachChutneyType++) {
                             if (chutneyDetails(chutneyNeed).toLowerCase() == foodType[eachChutneyType].chutney) {
-                                document.write('<br>', 'Your Food Will Delivered In 5 seconds');
+                                document.write('<br>', 'Your Food Will Delivered In Few Minutes');
                                 document.write('<br>', 'STEP-1:-', (foodType[eachChutneyType].foodRecipe.step1).toUpperCase())
                                 document.write('<br>', 'STEP-2:-', (foodType[eachChutneyType].foodRecipe.step2).toUpperCase())
                             }
